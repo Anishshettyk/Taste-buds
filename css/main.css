@@ -1,0 +1,221 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+a {
+  color: #14b1ab;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #14f098;
+  text-decoration: none;
+}
+
+/******************************************
+*preloader animation..
+********************************************/
+.load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #000;
+}
+
+.load #preloader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+}
+
+.load #preloader hr {
+  position: fixed;
+  border: 0;
+  margin: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: turn 2s ease infinite;
+          animation: turn 2s ease infinite;
+}
+
+.load #preloader :first-child {
+  background: #1acc8d;
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+}
+
+.load #preloader :nth-child(2) {
+  background: red;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+.load #preloader :nth-child(3) {
+  background: #1acc1a;
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+.load #preloader :nth-child(4) {
+  background: orange;
+}
+
+@-webkit-keyframes turn {
+  0%,
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  25% {
+    -webkit-transform: translate(160%);
+            transform: translate(160%);
+  }
+  50% {
+    -webkit-transform: translate(160%, 160%);
+            transform: translate(160%, 160%);
+  }
+  75% {
+    -webkit-transform: translate(0, 160%);
+            transform: translate(0, 160%);
+  }
+}
+
+@keyframes turn {
+  0%,
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  25% {
+    -webkit-transform: translate(160%);
+            transform: translate(160%);
+  }
+  50% {
+    -webkit-transform: translate(160%, 160%);
+            transform: translate(160%, 160%);
+  }
+  75% {
+    -webkit-transform: translate(0, 160%);
+            transform: translate(0, 160%);
+  }
+}
+
+.load_title {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.load_title h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: #ff4301;
+}
+
+.load_title h1 strong {
+  color: #14b1ab;
+}
+
+.load_title p {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 546px) {
+  .load h1 {
+    margin-left: 1rem;
+    font-size: 1.6rem;
+  }
+}
+
+/*******************************
+*Top bar
+*******************************/
+#topbar {
+  background: #0F2027;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2C5364), color-stop(#203A43), to(#0F2027));
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ff4301;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+#topbar .contact-details a {
+  line-height: 1;
+  color: #ff4301;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#topbar .contact-details:hover {
+  color: #ff1000;
+}
+
+#topbar .contact-details i {
+  color: #14b1ab;
+  padding-right: 5px;
+}
+
+#topbar .contact-details .icofont-phone {
+  padding-left: 15px;
+}
+
+#topbar .social-links a {
+  color: #14b1ab;
+  padding: 4px 0 4px 15px;
+  display: inline-block;
+  line-height: 1px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-size: 14px;
+}
+
+#topbar .social-links a:hover {
+  color: #14f098;
+}
+
+#topbar .social-links a:first-child {
+  border-left: 0;
+}

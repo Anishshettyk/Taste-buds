@@ -1,0 +1,61 @@
+@import "config";
+@import "preloader";
+@import "media";
+
+
+/*******************************
+*Top bar
+*******************************/
+#topbar {
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: $heading-color;
+    padding: 10px 0;
+    font-size: 14px;
+
+    .contact-details {
+        a {
+            line-height: 1;
+            color: $heading-color;
+            transition: 0.5s ease-in-out;
+        }
+
+        &:hover {
+            color: $heading-hover;
+        }
+
+        i {
+            color: $link-color;
+            padding-right: 5px;
+        }
+
+        .icofont-phone {
+            padding-left: 15px;
+        }
+    }
+
+    .social-links {
+        a {
+            color: $link-color;
+            padding: 4px 0 4px 15px;
+            display: inline-block;
+            line-height: 1px;
+            transition: 0.3s ease-in-out;
+            font-size: 14px;
+
+            &:hover {
+                color: $link-hover;
+            }
+
+            &:first-child {
+                border-left: 0;
+            }
+        }
+
+
+    }
+}
