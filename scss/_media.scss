@@ -4,3 +4,11 @@
         font-size: 1.6rem;
     }
 }
+
+@media screen and(min-width:768px) and (max-width:993px) {
+    .mobile-nav-toggle i {
+        position: fixed;
+        top: 70px;
+        right: 30px;
+    }
+}

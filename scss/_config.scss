@@ -1,10 +1,18 @@
+/** my color palete*/
 $background-color: #000;
+$white-color:#fff;
 $text-color:#84a9ac;
 $primary-color:#4a3f35;
 $heading-color:#ff4301;
 $link-color:#14b1ab;
 $heading-hover:#ff1000;
 $link-hover:#14f098;
+$facebook-color:#3b5998;
+$instagram-color:#3f729b;
+$twitter-color:#1DA1F2;
+$linkedin-color:#0e76a8;
+$dribble-color:#ea4c89;
+
 
 
 
@@ -22,10 +30,15 @@ body {
 a {
     color: $link-color;
     text-decoration: none;
+    cursor: pointer;
 
 
     &:hover {
         color: $link-hover;
         text-decoration: none;
     }
+}
+
+ul {
+    list-style: none;
 }
